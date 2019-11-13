@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+        <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Skyline</title>
+                <link rel="stylesheet">
+                <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+                <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+                <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
+            </head>
+    <body>
+        
+        <p style="font-size: 200%;">Name: {{name}}</p> <hr>
+        <p style="font-size: 150%;">Beta: {{beta}} </p> <hr>
+        <h1>Prospectus Objective Results</h1>
+        <ul>
+            {%for result in results%}
+                <li>{{result}}</li>
+            {%endfor%}
+        </ul>
+        <hr>
+        <p style="font-size: 150%;">Notes:</p>{{notes}}<hr>
+        <p style="font-size: 150%;">{{name}}'s Portfolio: <b>{{prospectus_objective}}</b></p>
+        <p style="font-size: 150%;">Portfolio Beta: <b>{{portfolio_beta}}</b></p><hr>
+        <p style="font-size: 150%;">Analysis: <b>{{risk_measurement}}</b></p> 
+    </body>
+</html>
